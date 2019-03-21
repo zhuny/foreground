@@ -19,6 +19,7 @@ a.label.new {
 a#actions-button {
 	float: right;
 	z-index: 499;
+	margin-right: 1rem;
 }
 
 /* rtl an ltr */
@@ -741,16 +742,6 @@ ul[class*="block-grid"] {
 .oo-ui-barToolGroup.oo-ui-widget-enabled>.oo-ui-toolGroup-tools>.oo-ui-tool>.oo-ui-tool-link, .oo-ui-barToolGroup>.oo-ui-toolGroup-tools>.oo-ui-tool.oo-ui-widget-disabled>.oo-ui-tool-link {
 	display: inline !important;
 }
-.mw-indicators {
-	float: right;
-	line-height: 1.6;
-	font-size: 0.875em;
-	position: relative;
-	margin: -1em .5em 0;
-	max-height: 30px;
-	width: auto;
-	z-index: 1;
-}
 .mw-indicator {
 	display: inline-block;
 }
@@ -791,6 +782,9 @@ body.action-formedit .row.hide-on-form-edit {
 
 /* Also adjust z-index of action menu to force it on top */
 
+#p-cactions {
+	padding: 0 0.25rem;
+}
 #p-cactions #actions {
 	z-index: 500;
 	white-space: nowrap;
@@ -1430,10 +1424,9 @@ ul[class*="block-grid"] {
 /* Page indicators */
 
 .mw-indicators {
-	float: right;
+	text-align: right;
 	line-height: 1.6;
 	font-size: 0.875em;
-	position: relative;
 	margin: -1em .5em .5em 1em;
 	max-height: 30px;
 	width: auto;
@@ -1548,3 +1541,72 @@ td.htmlform-tip {
 	font-size: 90%;
 	margin-top: 1em;
 }
+
+#siteNotice {
+	text-align: center;
+	background: #eeeeee;
+	border-radius: 8px;
+	padding: 8px;
+	margin-bottom: 1.2rem;
+}
+.mw-parser-output {
+	counter-reset: sec-a;
+	font-size: 0.9em;
+}
+.mw-parser-output > h2 {
+	padding-left: 0.7em;
+	counter-reset: sec-b;
+	font-size: 1.687rem;
+}
+.mw-parser-output > h3 {
+	padding-left: 0.5em;
+	counter-reset: sec-c;
+	font-size: 1.437rem;
+}
+.mw-parser-output > h4 {
+	padding-left: 0.4em;
+	counter-reset: sec-d;
+	font-size: 1.271rem;
+}
+.mw-parser-output > h5 {
+	padding-left: 0.3em;
+	counter-reset: sec-e;
+	font-size: 1.125rem;
+}
+.mw-parser-output > h6 {
+	padding-left: 0.24em;
+	font-size: 1em;
+}
+
+.mw-parser-output > h2,
+.mw-parser-output > h3,
+.mw-parser-output > h4,
+.mw-parser-output > h5,
+.mw-parser-output > h6 {
+	border-bottom: 1px solid #bbbbbb;
+	padding-bottom: 0.4em;
+}
+.mw-parser-output > h2::before {
+	content: counter(sec-a) ". ";
+	counter-increment: sec-a;
+}
+.mw-parser-output > h3::before {
+	content: counter(sec-b) ". ";
+	counter-increment: sec-b;
+}
+.mw-parser-output > h4::before {
+	content: counter(sec-c) ". ";
+	counter-increment: sec-c;
+}
+.mw-parser-output > h5::before {
+	content: counter(sec-d) ". ";
+	counter-increment: sec-d;
+}
+.mw-parser-output > h6::before {
+	content: counter(sec-e) ". ";
+	counter-increment: sec-e;
+}
+
+
+
+
