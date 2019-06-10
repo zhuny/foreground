@@ -1551,19 +1551,15 @@ td.htmlform-tip {
 }
 .mw-parser-output {
 	font-size: 0.9em;
-}
-.mw-parser-output > h1 {
-    padding-left: 0.8em;
 	counter-reset: sec-a;
-	font-size: 2rem;
 }
 .mw-parser-output > h2 {
-	padding-left: 0.7em;
+	padding-left: 0.24em;
 	counter-reset: sec-b;
 	font-size: 1.687rem;
 }
 .mw-parser-output > h3 {
-	padding-left: 0.5em;
+	padding-left: 0.3em;
 	counter-reset: sec-c;
 	font-size: 1.437rem;
 }
@@ -1573,12 +1569,12 @@ td.htmlform-tip {
 	font-size: 1.271rem;
 }
 .mw-parser-output > h5 {
-	padding-left: 0.3em;
+	padding-left: 0.5em;
 	counter-reset: sec-e;
 	font-size: 1.125rem;
 }
 .mw-parser-output > h6 {
-	padding-left: 0.24em;
+	padding-left: 0.7em;
 	font-size: 1em;
 }
 
